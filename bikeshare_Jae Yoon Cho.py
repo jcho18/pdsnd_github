@@ -263,15 +263,13 @@ def display_data(df):
                 if len(df[k1 : k2].index) == 0:
                     print('No more data to display')
                     return
+                # move to next five rows
                 k1 += 5
                 k2 += 5
             
-
         elif display.lower() == 'n':
             valid_input = True
    
-
-
 def main():
     while True:
         city, month, day = get_filters()
