@@ -74,8 +74,7 @@ def get_filters():
                     valid_day = True
 
         if option.lower() == 'none':
-            month = 0
-            day = 0
+            month, day = 0, 0
 
         valid_input = True
 
@@ -117,7 +116,6 @@ def load_data(city, month, day):
     if int(day) != 0:
         df = df[df['Day'] == days[day]]
 
-    #print(df)
     return df
 
 
